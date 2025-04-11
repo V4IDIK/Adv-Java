@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Displaying</title>
+</head>
+<body> 
+<table border="2" cellpadding="10">
+<thead>
+<tr>
+<th>Id</th>
+<th>Name</th>
+<th>Fees</th>
+</tr>
+</thead>
+<tbody>
+<tr th:each="Test1: ${data}">
+<td	  th:text="${Test1.id}">Id</td>
+<td  th:text="${Test1.name}">Name</td>
+<td	  th:text="${Test1.fees}">Fees</td>
+</tbody>
+
+
+</table>
+
+</body>
+</html>
